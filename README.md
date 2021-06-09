@@ -2,8 +2,8 @@
 ## Проэкт выполнил Тюрин Александр  
 
 В проэкте используются :
--HTML
--CSS
--Javascript
--Normalize
+- HTML
+- CSS
+- Javascript
+- Normalize
 
