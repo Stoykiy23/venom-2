@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venom 2 - сайт о фильме</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Ставим для боди класс что бы в css залить фоновое изображение кровь -->
+<body class="blood">
+  <div class="container">
+    <!-- Пишем шапку сайта через тег header с классом header -->
+    <header class="header">
+      <!-- Вставляем логотип, он обычно оборачивается ссылкой, то есть тегом <a> -->
+      <a href="/" class="logo-link">
+        <img width="46" height="71" src="img/logo.png" alt="logo: venom" class="logo-image">
+      </a>
+      <!-- Далее идет навигаци по сайту, ее оборачиваем в тег nav с классом nav -->
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="about.html" class="nav-menu-link">o фильме</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="trailer.html" class="nav-menu-link">трейлер</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="actors.html" class="nav-menu-link">актеры</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="premier.html" class="nav-menu-link">премьера</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Верстаем следующий блок, центральный с текстами дата, название и краткое описание
+      что бы не запутсать в дивах ставим вертикальную палку и c, тогда при закрытии одного дива вылезет комент -->
+    <div class="film">
+      <div class="film-text">
+        <span class="film-date">16 сентября 2021</span>
+        <img src="img/venom-2.svg" alt="logo: venom-2" class="film-logo">
+        <p class="film-description">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
+      </div>
+      <!-- /.hero-text -->
+      <div class="button-group">
+        <button class="button button-primary">
+          <!-- Сразу в картинке прописываем ее ширину и высоту., что бы не лезть в стайл сисс -->
+          <img width="15" src="img/play.svg" alt="icon: play" class="button-icon">
+          <span class="button-text">смотреть трейлер</span>
+        </button>
+        <a href="" class="button button-link">
+          <img width="15" src="img/ticket.svg" alt="icon: ticket" class="button-icon">
+          <span class="button-text">билеты на премьеру</span>
+        </a>
+      </div>
+    </div>
+    <!-- /.hero -->
+
+  </div>
+  <!-- /.container -->
+  <img src="img/venom.png" alt="photo: venom" class="venom">
+</body>
+</html>

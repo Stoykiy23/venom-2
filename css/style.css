@@ -1,0 +1,92 @@
+/* Основной посыл в том что мы выстариваем блочную верстку с отступами дивов и элементов друг от друга, а не делаем общую позицию по высоте право или лево, все через mardin или padding относительно друг дрга */
+body{
+  /* Цвет текста делаем белым при помощи следующей функции колор */
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+/* растягиваем по всей ширине страницы с  отступом слева 110 пикселей */
+.container{
+  max-width: 1140px;
+  margin:auto;
+}
+/* Что бы в header все выстраилось в линию нужно задать свойсто display: flex;? ЧТО БЫ ОТЦЕНТРОВАТЬ ЭЛЕМЕНТЫ ВЕРТИКАЛЬНО ПО ЦЕНТРУ, ВВОДИМ СВОЙСТВО align-items: center;  так же делаем внутренний отступ сверху что бы лого не прилипал к верху padding-top: 40px;далее задаем отступ вниз 80 пикселе, что бы следующий блок не прилипал к нему */
+.header{
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  margin-bottom: 80px;
+  
+}
+/* Делаем лого блочным элементомЮ и задаем отступ справа что б меню не прилипало к нему */
+.logo-link{
+  display: inline-block;
+  margin-right: 50px;
+}
+.nav-menu{
+  margin: 0;
+  padding: 0;
+  /* Убираем точки из списка при помощи свойства list-style: none; */
+  list-style: none;
+  /* Выравниваем меню в линию, а не столбцом по умолчанию при помощи display: flex; */
+  display: flex;
+}
+.nav-menu-item{
+  margin-right: 30px;
+  }
+.nav-menu-link{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  }
+.film-date{
+  display: block;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 38px;
+  color: rgba(255, 255, 255, 0.8);
+  }
+.film-description{
+  margin-top: 40px;
+  max-width: 423px;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.8);
+  }
+.button{
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  }
+  /* Делаем кнопки в линию блочными и выравниваем отностилено друг друга по вертикали, и отсуп от картини слева */
+.button-icon, .button-text{
+  display: inline-block;
+  vertical-align: middle;
+  /* Делавем эффект при навелении рука */
+  cursor: pointer;
+}
+.button-text{
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 10px;  
+}
+.button-primary{
+  color: #8D0019;
+  background-color: #fff;
+}
+.button-link{
+  color: #FFFFFF;
+}
+/* Оформили блок с кнопками, теперь задаим ему отступ от верхнего элемета */
+.button-group{
+  margin-top: 70px;
+}
+/* Теперь для класса venom поставим абсолютную позицию, это значит что картинка не будет учитываться остальныи эленемнтами, что она может заливать(накладываться) на их, и располагаем ее где нужно при помощи top и right */
+.venom{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.blood{
+  /* Прописываем что позиция этой картинки будет фоновой справа сверху */
+  background: url(../img/blood.png) no-repeat top right, #14131A url(../img/background.jpg) no-repeat center center / 100%;
+  }
